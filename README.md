@@ -1,6 +1,10 @@
 # 🍕 Online Pizza Ordering System
 
-A multi-page pizza ordering website developed using HTML, CSS, and JavaScript.
+A multi-page pizza ordering website developed using HTML, CSS, and JavaScript as part of a second-semester academic project.
+
+## 📋 Overview
+
+This project simulates an online pizza ordering platform with features such as menu browsing, order placement, user authentication pages, and form validation.
 
 ## Features
 
