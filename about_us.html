@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>About_us</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="about_us.css">
+		<script>
+			function newimg()
+			{
+				document.getElementById("res_image").src="restaurant2.png";
+			}
+			function oldimg()
+			{
+				document.getElementById("res_image").src="restaurant.png";
+			}
+			function double()
+			{
+				document.getElementById("real").style.color="red";
+				document.getElementById("real").style.fontSize="30px";
+			}
+		</script>
+	</head>
+	<body>
+		<div>
+			<img src="logo.png" id="logo">
+		</div>
+		<div class="navigation">
+			<a href="home.html">Home</a>
+			<a href="menu.html">Menu</a>
+			<a class="active" href="about_us.html">About us</a>
+			<a href="our services.html">Services</a>
+			<a href="contact_us.html">Contact Us</a>
+			<a href="index.html">Log Out</a>
+			<a style="width:10%;height:2.8%;margin-left:1%" href="chart.html"><img src="chart_img.png" id="chart_img"></a>
+		</div>
+		<hr id="line1">
+		<div id="res">
+			<img src="restaurant.png" id="res_image" onmouseover="newimg()" onmouseout="oldimg()">
+		</div>
+		<div id="aboutus">
+			<h2 id="about"><u>About Us:-</u></h2>
+			<p id="about_us">
+				We offer a great variety of Unlimited Pizza. Whether it is topping or chopping, we have always come up with innovative ideas to make your bite flavoursome and filled with a smile. Our pizzas are served with a freshly baked base and various kinds of toppings. An appetizing Panini is the speciality of <b id="real" ondblclick="double()">Real Paprizza</b> made from oregano flavoured sliced bread stuffed vegetables, spices, and sauces. Our hot and cold served salad is a dish consisting of cut fruits, vegetables, and pasta, which may be mixed with salad or tropical salad dressing. Our spicy, rich, sweet, toothsome, and well-seasoned menu ensures to have the best mealtimes for our customers; after all, it’s the moments in life that matter!!
+			</p>
+		</div>
+		<div id="contact">
+			<div id="contact1">Contact Us</div>
+			<div id="contact2">Customer support<br><br><u>Support@realpeprizza.in</u></div>
+			<div id="contact3">Franchise Enquiry<br><br><u>Info@realpeprizza.in</u><br><br></div>
+			<div id="contact4">
+				Copyright &copy; 2023 <b>Real Peprizza</b>.All rights reserved.Desighned by <b>DFD</b>
+			</div>
+		</div>
+		</body>
+</html>

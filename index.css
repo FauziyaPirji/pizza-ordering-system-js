@@ -1,0 +1,87 @@
+	 *{
+		padding:0;
+		margin:0;
+		box-sizing: border-box;
+		font-family:"poppins",sans-serif;
+	 }
+	 body{
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		min-height:100vh;
+		background:url(imgg2.jpg)center/cover;
+		 
+	 }
+	form{
+		display:flex;
+		flex-direction:column;
+		align-items: center;
+		gap:20px;
+		background-color:#ffffff29;
+		backdrop-filter:blur(30px);
+		padding:50px;
+		width:500px;
+		clip-path:polygon(25% 0%,75% 0%,100% 50%,75% 100%,25% 100%,0% 50%);
+		border-redius:35%;
+	}
+	header{
+		font-size: 50px;
+	}
+
+	h2{
+		font-size:40px;
+		color:white;
+		font-family:Times;
+	}
+	.form_wrapper{
+		display:flex;
+		align-items:center;
+	}
+
+	.triangle{
+		width: 50px;
+		height: 60px;
+		background-color: white;
+		clip-path: polygon(50% 0%,0% 100%,100% 100%);
+	}
+
+	.triangle.left{
+		transform: rotate(-90deg);
+	}
+
+	.triangle.right{
+		transform: rotate(90deg);
+	}
+	title{
+		font-size:25px;
+		color:white;
+	}
+	label{
+		font-size:30px;
+		font-family:Times;
+		color:lightblue;
+	}
+	input{
+		height: 40px;
+		border: none;
+		outline: none;
+		padding:0 20px;
+		font-size:16px;
+		font-style: italic;
+	}
+
+	button{
+		height: 50px;
+		padding:0 25px;
+		background-color:red;
+		border: none;
+		color: balck;
+		font-weight: bold;
+		border-radius: 4px;
+	}
+	.triangle.btn{
+		background-color: darkred;
+	}
+	a{
+		color:white;
+	}

@@ -1,0 +1,324 @@
+<html>
+    <head>
+    	<title>order Form</title>
+            <link rel="stylesheet" href="order_form.css">
+            <script>
+				function txtfocus()
+				{
+					document.getElementById("fname").style.background="white";
+					document.getElementById("fname").style.color="black";
+				}
+				function focuslost()
+				{
+					document.getElementById("fname").style.background="grey";
+					document.getElementById("fname").style.color="white";
+				}
+				function txtfocus2()
+				{
+					document.getElementById("mname").style.background="white";
+					document.getElementById("mname").style.color="black";
+				}
+				function focuslost2()
+				{
+					document.getElementById("mname").style.background="grey";
+					document.getElementById("mname").style.color="white";
+				}
+				function txtfocus3()
+				{
+					document.getElementById("lname").style.background="white";
+					document.getElementById("lname").style.color="black";
+				}
+				function focuslost3()
+				{
+					document.getElementById("lname").style.background="grey";
+					document.getElementById("lname").style.color="white";
+				}
+				function txtfocus4()
+				{
+					document.getElementById("mobile").style.background="white";
+					document.getElementById("mobile").style.color="black";
+				}
+				function focuslost4()
+				{
+					document.getElementById("mobile").style.background="grey";
+					document.getElementById("mobile").style.color="white";
+				}
+				function txtfocus5()
+				{
+					document.getElementById("address").style.background="white";
+					document.getElementById("address").style.color="black";
+				}
+				function focuslost5()
+				{
+					document.getElementById("address").style.background="grey";
+					document.getElementById("address").style.color="white";
+				}
+				function txtfocus6()
+				{
+					document.getElementById("pincode").style.background="white";
+					document.getElementById("pincode").style.color="black";
+				}
+				function focuslost6()
+				{
+					document.getElementById("pincode").style.background="grey";
+					document.getElementById("pincode").style.color="white";
+				}
+				function txtfocus7()
+				{
+					document.getElementById("quantity").style.background="white";
+					document.getElementById("quantity").style.color="black";
+				}
+				function focuslost7()
+				{
+					document.getElementById("quantity").style.background="grey";
+					document.getElementById("quantity").style.color="white";
+				}
+                var stateObject=
+                {
+                	"India":{
+                        "Gujarat":["Surat","Rajkot","Ahmedabad","Surendranagar","Baroda","Ghandhinagar"],
+                        "Delhi":["Qila Rai Pithora","Mehrauli","Siri","Tughlaqaad","Firozabad","Shergarh","Shahjahanabad"],
+                        "Mumbai":["Andheri","Dadar","Goregaon","Juhu","Powai","Bandra","Thane "]
+                    }
+                }
+                window.onload=function()
+                {
+                    var selectCountryList=document.getElementById("selectCountryList"),
+                    selectStateList=document.getElementById("selectStateList"),
+                    selectCityList=document.getElementById("selectCityList");
+                    for(var country in stateObject)
+                    {
+                        selectCountryList.options[
+                        selectCountryList.options.length]=new Option(country,country);
+                    }
+                    selectCountryList.onchange=function()
+                    {
+                        selectStateList.length=1;
+                        selectCityList.length=1;
+                        if(this.selectedIndex<1)return;
+                        for(var state in stateObject[this.value])
+                        {
+                            selectStateList.options[
+                            selectStateList.options.length]=new Option(state,state);
+                        }
+                    }
+                    selectCountryList.onchange();
+                    selectStateList.onchange=function()
+                    {
+                        selectCityList.length=1;
+                        if(this.selectedIndex<1)return;
+                        var city=stateObject[selectCountryList.value][this.value];
+                        for(var i=0;i<city.length;i++)
+                        {
+                            selectCityList.options[
+                            selectCityList.options.length]=new Option(city[i],city[i]);
+                        }
+                    }
+                }
+                function clearErrors()
+				{
+					errors=document.getElementsByClassName("error");
+					for(let item of errors)
+					{
+						item.innerHTML="";
+					}
+				}
+				function validateform()
+				{
+					clearErrors();
+					var a1=document.forms["myForm"]["fname"].value;
+					var a2=document.forms["myForm"]["mname"].value;
+					var a3=document.forms["myForm"]["lname"].value;
+					var a4=document.forms["myForm"]["mobile"].value;
+					var a5=document.forms["myForm"]["address"].value;
+					var a6=document.forms["myForm"]["selectCountryList"].value;
+					var a7=document.forms["myForm"]["selectStateList"].value;
+					var a8=document.forms["myForm"]["selectCityList"].value;
+					var a9=document.forms["myForm"]["pincode"].value;
+					var a10=document.forms["myForm"]["quantity"].value;
+					var a11=document.forms["myForm"]["size"];
+					var errormes1=document.getElementById("error1");
+					var errormes2=document.getElementById("error2");
+					var errormes3=document.getElementById("error3");
+					var errormes4=document.getElementById("error4");
+					var errormes5=document.getElementById("error5");
+					var errormes6=document.getElementById("error6");
+					var errormes7=document.getElementById("error7");
+					var errormes8=document.getElementById("error8");
+					var errormes9=document.getElementById("error9");
+					var errormes10=document.getElementById("error10");
+					var errormes11=document.getElementById("error11");
+					if(a1=="")
+					{
+						errormes1.textContent="Please Enter First Name";
+						errormes1.style.color="red";
+						return false;
+					}
+					if(((a1.length)<5) || ((a1.length)>20))
+					{
+						errormes1.textContent="First name must be between 5 to 20";
+						errormes1.style.color="red";
+						return false;
+					}
+					if(a2=="")
+					{
+						errormes2.textContent="Please Enter Middle Name";
+						errormes2.style.color="red";
+						return false;
+					}
+					if(((a2.length)<5) || ((a2.length)>20))
+					{
+						errormes2.textContent="Middle name must be between 5 to 20";
+						errormes2.style.color="red";
+						return false;
+					}
+					if(a3=="")
+					{
+						errormes3.textContent="Please Enter Last Name";
+						errormes3.style.color="red";
+						return false;
+					}
+					if(((a3.length)<5) || ((a3.length)>20))
+					{
+						errormes3.textContent="Last name must be between 5 to 20";
+						errormes3.style.color="red";
+						return false;
+					}
+					if(a4=="")
+					{
+						errormes4.textContent="Please Enter Phone Number";
+						errormes4.style.color="red";
+						return false;
+					}
+					if(a4.length!=10)
+					{
+						errormes4.textContent="Phone Number must be in 10 digits";
+						errormes4.style.color="red";
+						return false;
+					}
+					if(a5=="")
+					{
+						errormes5.textContent="Please Enter Address";
+						errormes5.style.color="red";
+						return false;
+					}
+					if(a6=="Select Your Country")
+					{
+						errormes6.textContent="Please Select One Country";
+						errormes6.style.color="red";
+						return false;
+					}
+					if(a7=="Select Your State")
+					{
+						errormes7.textContent="Please Select One State";
+						errormes7.style.color="red";
+						return false;
+					}
+					if(a8=="Select Your City")
+					{
+						errormes8.textContent="Please Select One City";
+						errormes8.style.color="red";
+						return false;
+					}
+					if(a9=="")
+					{
+						errormes9.textContent="Please Enter Pincode";
+						errormes9.style.color="red";
+						return false;
+					}
+					if(a9.length<6)
+					{
+						errormes9.textContent="Please Enter 6 digit";
+						errormes9.style.color="red";
+						return false;
+					}
+					if(a10=="")
+					{
+						errormes10.textContent="Please Enter Quantity";
+						errormes10.style.color="red";
+						return false;
+					}
+					if(a11[0].checked==false && a11[1].checked==false && a11[2].checked==false)
+					{
+						errormes11.textContent="Please select one option";
+						errormes11.style.color="red";
+						return false;
+					}
+					else
+					{
+						window.location="confirm.html";	
+					}
+				}
+				function price()
+				{
+					x=Number(document.myForm.quantity.value);
+					z=x*200;
+					document.myForm.result.value=z;
+				}
+            </script>
+    </head>
+        <body>
+			<a style="width:10%;height:2.8%;margin-left:80%" href="home.html">Back</a>
+			<br>
+            <h2>Order Form</h2>
+            <form name="myForm">
+                <label>First Name :</label>
+                <input type="text" name="fname" id="fname" onfocus="txtfocus()" onblur="focuslost()">
+                <p id="error1" class="error"></p>
+
+                <label>Middle Name :</label>
+                <input type="text" name="mname" id="mname" onfocus="txtfocus2()" onblur="focuslost2()">
+                <p id="error2" class="error"></p>
+
+                <label>Last Name :</label>
+                <input type="text" name="lname" id="lname" onfocus="txtfocus3()" onblur="focuslost3()">
+                <p id="error3" class="error"></p>
+                              
+                <label>Mobile Number :</label>
+                <input type="number" name="mobile" min="0" id="mobile" onfocus="txtfocus4()" onblur="focuslost4()">
+                <p id="error4" class="error"></p>
+
+                <label>Address :</label>
+                <textarea name="address" id="address" onfocus="txtfocus5()" onblur="focuslost5()"></textarea>
+                <p id="error5" class="error"></p>
+            
+                <label>Country :</label>
+                <select name="country" id="selectCountryList" size="1">
+                    <option value="Select Your Country" selected="selected">Select Your Country</option>
+                </select>
+                <p id="error6" class="error"></p>
+                              
+                <label>State :</label>
+                <select name="state" id="selectStateList" size="1">
+                    <option value="Select Your State" selected="selected">Select Your State</option>
+                </select>
+                <p id="error7" class="error"></p>
+                              
+                <label>City :</label>
+                <select name="city" id="selectCityList" size="1">
+                    <option value="Select Your City" selected="selected">Select Your City</option>
+                </select> 
+                <p id="error8" class="error"></p>
+                                         
+                <label>Pincode :</label>
+                <input type="number" name="pincode" min="0" id="pincode" onfocus="txtfocus6()" onblur="focuslost6()">
+                <p id="error9" class="error"></p>
+                                         
+                <label>Quantity :</label>
+                <input type="number" min="1" id="quantity" name="quantity" onfocus="txtfocus7()" onblur="focuslost7()">
+				<input type="button" id="p" onClick="price()" value="Total Price">
+				<input type="text" id="result" name="result"> 
+                <p id="error10" class="error"></p>
+                              
+                <label>Size :</label>
+                <input type="radio" value="small" id="size" name="size">Small
+                <input type="radio" value="medium" id="size" name="size">Medium
+                <input type="radio" value="large" id="size" name="size">Large
+                <p id="error11" class="error"></p>
+            </form>
+            <br>
+            <p><b>NOTE:-</b>Only Cash on delivery method accepted.</p>
+            <br>
+            <input type="submit" id="buttongreen" value="Order" onclick="validateform()">
+        </body>
+</html>

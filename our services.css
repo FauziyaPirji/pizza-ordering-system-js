@@ -1,0 +1,59 @@
+#logo{
+	width:10%;
+	height:10%;
+	float:left;
+}
+.navigation{
+	overflow:hidden;
+	background-color:red;
+}
+.navigation a{
+	float:left;
+	color:white;
+	text-align:center;
+	padding:15px 40px;
+	text-decoration:none;
+	font-size:17px;
+}
+.navigation a:hover{
+	background-color:lightgreen;
+	color:white;
+	text-decoration:underline;
+}
+.navigation a.active{
+	background-color:lightgreen;
+	color:white;
+}
+#chart_img{
+	width:30%;
+}
+h1{
+    background-color:black;
+	color:red;
+	text-align:center;
+}
+#image1{
+	width:90%;
+	height:30%;
+}
+#div2{
+	float:left;
+	margin-left:10%;
+}
+#image2{
+	width:90%;
+	height:30%;
+}
+
+#div3{
+	float:left;
+	margin-left:10%;
+}
+#image3{
+	width:90%;
+	height:30%;
+}
+#div4{
+	float:left;
+	margin-left:10%;
+}

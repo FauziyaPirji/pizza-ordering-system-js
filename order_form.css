@@ -1,0 +1,202 @@
+h2{
+    text-decoration:underline;
+    margin-left:400px;
+    margin-top:20px;
+	border:2px solid aliceblue;
+	width:35%;
+	box-shadow:10px 10px darkgray;
+}
+body{
+    background:url(bj.jpeg)center/cover;
+    color:aliceblue;
+    margin-left:25%;
+	font-size:30;
+}
+a{
+	float:left;
+	color:white;
+	text-align:center;
+	padding:15px 40px;
+	text-decoration:none;
+	font-size:17px;
+	background-color:red;
+}
+a:hover{
+	background-color:lightgreen;
+	color:white;
+	text-decoration:underline;
+}
+form{
+	font-family:segoe print;
+	margin-left:400px;
+	font-size:20;
+}
+table{
+    border-spacing:12px;
+    margin-left:500px;
+	font-size:20;
+	font-family:segoe print;
+}
+#buttongreen{
+	width:150px;
+	padding:15px;
+	text-align:center;
+	border-radius:25px;
+	font-weight:bold;
+	border:2px solid green;
+	background:transparent;
+	margin-bottom:30px;
+    color:white;
+    margin-left:600px;
+}
+#buttongreen:hover{
+	background:green;
+    color:white;
+}
+p{
+  margin-left:300px;
+  font-family:segoe print;
+}
+#fname{
+	box-shadow:2px 2px darkgray;
+	border:1px solid aliceblue;
+	border-radius:25px;
+	background:transparent;
+	color:aliceblue;
+}
+#fname:hover{
+	background-color:transparent;
+	color:aliceblue;
+}
+#mname{
+	box-shadow:2px 2px darkgray;
+	border:1px solid aliceblue;
+	border-radius:25px;
+	background:transparent;
+	color:aliceblue;
+}
+#mname:hover{
+	background-color:transparent;
+	color:aliceblue;
+}
+#lname{
+	box-shadow:2px 2px darkgray;
+	border:1px solid aliceblue;
+	border-radius:25px;
+	background:transparent;
+	color:aliceblue;
+}
+#lname:hover{
+	background-color:transparent;
+	color:aliceblue;
+}
+#mobile{
+	box-shadow:2px 2px darkgray;
+	border:1px solid aliceblue;
+	border-radius:25px;
+	background:transparent;
+	color:aliceblue;
+}
+#mobile:hover{
+	background-color:transparent;
+	color:aliceblue;
+}
+#address{
+	box-shadow:2px 2px darkgray;
+	border:1px solid aliceblue;
+	border-radius:25px;
+	background:transparent;
+	color:aliceblue;
+}
+#address:hover{
+	background-color:transparent;
+	color:aliceblue;
+}
+#pincode{
+	box-shadow:2px 2px darkgray;
+	border:1px solid aliceblue;
+	border-radius:25px;
+	background:transparent;
+	color:aliceblue;
+}
+#pincode:hover{
+	background-color:transparent;
+	color:aliceblue;
+}
+#quantity{
+	box-shadow:2px 2px darkgray;
+	border:1px solid aliceblue;
+	border-radius:25px;
+	background:transparent;
+	color:aliceblue;
+}
+#quantity:hover{
+	background-color:transparent;
+	color:aliceblue;
+}
+#p{
+	box-shadow:2px 2px darkgray;
+	border:1px solid aliceblue;
+	border-radius:25px;
+	background:transparent;
+	color:aliceblue;
+}
+#p:hover{
+	background-color:transparent;
+	color:aliceblue;
+}
+#result{
+	box-shadow:2px 2px darkgray;
+	border:1px solid aliceblue;
+	border-radius:25px;
+	background:transparent;
+	color:aliceblue;
+}
+#result:hover{
+	background-color:transparent;
+	color:aliceblue;
+}
+#size{
+	box-shadow:2px 2px darkgray;
+	border:1px solid aliceblue;
+	border-radius:25px;
+	background:transparent;
+	color:aliceblue;
+}
+#size:hover{
+	background-color:transparent;
+	color:aliceblue;
+}
+#selectCountryList{
+	box-shadow:2px 2px darkgray;
+	border:1px solid aliceblue;
+	border-radius:25px;
+	background:transparent;
+	color:aliceblue;
+}
+#selectCountryList:hover{
+	background-color:transparent;
+	color:black;
+}
+#selectStateList{
+	box-shadow:2px 2px darkgrey;
+	border:1px solid lightblue;
+	border-radius:25px;
+	background:transparent;
+	color:aliceblue;
+}
+#selectStateList:hover{
+	background-color:transparent;
+	color:black;
+}
+#selectCityList{
+	box-shadow:2px 2px darkgray;
+	border:1px solid lightblue;
+	border-radius:25px;
+	background:transparent;
+	color:aliceblue;
+}
+#selectCityList:hover{
+	background-color:transparent;
+	color:black;
+}

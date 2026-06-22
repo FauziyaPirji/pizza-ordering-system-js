@@ -1,0 +1,542 @@
+#logo{
+	width:10%;
+	height:10%;
+	float:left;
+}
+.navigation{
+	overflow:hidden;
+	background-color:red;
+}
+.navigation a{
+	float:left;
+	color:white;
+	text-align:center;
+	padding:15px 40px;
+	text-decoration:none;
+	font-size:17px;
+}
+.navigation a:hover{
+	background-color:lightgreen;
+	color:white;
+	text-decoration:underline;
+}
+.navigation a.active{
+	background-color:lightgreen;
+	color:white;
+}
+#chart_img{
+	width:30%;
+}
+#div1{
+	width:300px;
+	height:50px;
+	transition:width 2s, height 2s, transform 2s;
+}
+#div1:hover{
+	width:300px;
+	height:50px;
+	transform:rotate(360deg);
+	color:orangered;
+}
+#div2{
+	width:300px;
+	height:50px;
+	transition:width 2s, height 2s, transform 2s;
+}
+#div2:hover{
+	width:300px;
+	height:50px;
+	transform:rotate(360deg);
+	color:orangered;
+}
+#div3{
+	width:300px;
+	height:50px;
+	transition:width 2s, height 2s, transform 2s;
+}
+#div3:hover{
+	width:300px;
+	height:50px;
+	transform:rotate(360deg);
+	color:orangered;
+}
+#div4{
+	width:400px;
+	height:50px;
+	transition:width 2s, height 2s, transform 2s;
+}
+#div4:hover{
+	width:400px;
+	height:50px;
+	transform:rotate(360deg);
+	color:orangered;
+}
+#saurce{
+	margin-top:40px;
+	font-family:cursive;
+}
+#cart-container1{
+	width:15%;
+	height:35%;
+	border-radius:20px;
+	box-shadow:0px 25px 40px red;
+	float:left;
+	margin-left:60px;
+	margin-top:50px;
+}
+#sauce1{
+	width:50%;
+	height:50%;
+	margin-left:50px;	
+}
+#sauces1{
+	width:150px;
+	padding:15px;
+	text-align:center;
+	border-radius:25px;
+	font-weight:bold;
+	border:2px solid green;
+	background:transparent;
+	margin-top:10px;
+	margin-bottom:30px;
+	margin-left:30px;
+}
+#sauces1:hover{
+	background:green;
+}
+#sauce2{
+	width:50%;
+	height:50%;
+	margin-left:50px;	
+}
+#sauces2{
+	width:150px;
+	padding:15px;
+	text-align:center;
+	border-radius:25px;
+	font-weight:bold;
+	border:2px solid green;
+	background:transparent;
+	margin-top:10px;
+	margin-bottom:30px;
+	margin-left:30px;
+}
+#sauces2:hover{
+	background:green;
+}
+#sauce3{
+	width:70%;
+	height:50%;
+	margin-left:30px;
+	margin-top:10px;		
+}
+#sauces3{
+	width:150px;
+	padding:15px;
+	text-align:center;
+	border-radius:25px;
+	font-weight:bold;
+	border:2px solid green;
+	background:transparent;
+	margin-top:10px;
+	margin-bottom:30px;
+	margin-left:30px;
+}
+#sauces3:hover{
+	background:green;
+}
+#sauce4{
+	width:70%;
+	height:50%;
+	margin-left:30px;	
+}
+#sauces4{
+	width:150px;
+	padding:15px;
+	text-align:center;
+	border-radius:25px;
+	font-weight:bold;
+	border:2px solid green;
+	background:transparent;
+	margin-top:10px;
+	margin-bottom:30px;
+	margin-left:30px;
+}
+#sauces4:hover{
+	background:green;
+}
+#sauce5{
+	width:70%;
+	height:50%;
+	margin-left:30px;		
+}
+#sauces5{
+	width:150px;
+	padding:15px;
+	text-align:center;
+	border-radius:25px;
+	font-weight:bold;
+	border:2px solid green;
+	background:transparent;
+	margin-top:10px;
+	margin-bottom:30px;
+	margin-left:30px;
+}
+#sauces5:hover{
+	background:green;
+}
+#name{
+	margin-left:30px;
+	margin-top:0;
+}
+#checkbox{
+	margin-left:70px;
+}
+#cart-container2{
+	width:15%;
+	height:35%;
+	border-radius:20px;
+	box-shadow:0px 25px 40px black;
+	float:left;
+	margin-left:225px;
+	margin-top:50px;
+}
+#cheese{
+	margin-top:70px;
+	font-family:cursive;
+}
+#cheese1{
+	width:50%;
+	height:50%;
+	margin-left:50px;	
+}
+#cheeses1{
+	width:150px;
+	padding:15px;
+	text-align:center;
+	border-radius:25px;
+	font-weight:bold;
+	border:2px solid green;
+	background:transparent;
+	margin-top:10px;
+	margin-bottom:30px;
+	margin-left:30px;
+}
+#cheeses1:hover{
+	background:green;
+}
+#cheese2{
+	width:50%;
+	height:50%;
+	margin-left:50px;		
+}
+#cheeses2{
+	width:150px;
+	padding:15px;
+	text-align:center;
+	border-radius:25px;
+	font-weight:bold;
+	border:2px solid green;
+	background:transparent;
+	margin-top:10px;
+	margin-bottom:30px;
+	margin-left:30px;
+}
+#cheeses2:hover{
+	background:green;
+}
+#cheese3{
+	width:50%;
+	height:50%;
+	margin-left:50px;		
+}
+#cheeses3{
+	width:150px;
+	padding:15px;
+	text-align:center;
+	border-radius:25px;
+	font-weight:bold;
+	border:2px solid green;
+	background:transparent;
+	margin-top:10px;
+	margin-bottom:30px;
+	margin-left:30px;
+}
+#cheeses3:hover{
+	background:green;
+}
+#cart-container3{
+	width:15%;
+	height:35%;
+	border-radius:20px;
+	box-shadow:0px 25px 40px red;
+	float:left;
+	margin-left:225px;
+	margin-top:50px;
+}
+#meat{
+	margin-top:70px;
+	font-family:cursive;
+}
+#meat1{
+	width:50%;
+	height:50%;
+	margin-left:50px;	
+}
+#meats1{
+	width:150px;
+	padding:15px;
+	text-align:center;
+	border-radius:25px;
+	font-weight:bold;
+	border:2px solid green;
+	background:transparent;
+	margin-top:10px;
+	margin-bottom:30px;
+	margin-left:30px;
+}
+#meats1:hover{
+	background:green;
+}
+#meat2{
+	width:50%;
+	height:50%;
+	margin-left:50px;		
+}
+#meats2{
+	width:150px;
+	padding:15px;
+	text-align:center;
+	border-radius:25px;
+	font-weight:bold;
+	border:2px solid green;
+	background:transparent;
+	margin-top:10px;
+	margin-bottom:30px;
+	margin-left:30px;
+}
+#meats2:hover{
+	background:green;
+}
+#meat3{
+	width:50%;
+	height:50%;
+	margin-left:50px;		
+}
+#meats3{
+	width:150px;
+	padding:15px;
+	text-align:center;
+	border-radius:25px;
+	font-weight:bold;
+	border:2px solid green;
+	background:transparent;
+	margin-top:10px;
+	margin-bottom:30px;
+	margin-left:30px;
+}
+#meats3:hover{
+	background:green;
+}
+#cart-container4{
+	width:15%;
+	height:35%;
+	border-radius:20px;
+	box-shadow:0px 25px 40px black;
+	float:left;
+	margin-left:120px;
+	margin-top:50px;
+}
+#topping{
+	margin-top:70px;
+	font-family:cursive;
+}
+#topping1{
+	width:50%;
+	height:50%;
+	margin-left:50px;
+}
+#toppings1{
+	width:150px;
+	padding:15px;
+	text-align:center;
+	border-radius:25px;
+	font-weight:bold;
+	border:2px solid green;
+	background:transparent;
+	margin-top:10px;
+	margin-bottom:30px;
+	margin-left:30px;
+}
+#toppings1:hover{
+	background:green;
+}
+#topping2{
+	width:50%;
+	height:50%;
+	margin-left:50px;		
+}
+#toppings2{
+	width:150px;
+	padding:15px;
+	text-align:center;
+	border-radius:25px;
+	font-weight:bold;
+	border:2px solid green;
+	background:transparent;
+	margin-top:10px;
+	margin-bottom:30px;
+	margin-left:30px;
+}
+#toppings2:hover{
+	background:green;
+}
+#topping3{
+	width:50%;
+	height:50%;
+	margin-left:50px;		
+}
+#toppings3{
+	width:150px;
+	padding:15px;
+	text-align:center;
+	border-radius:25px;
+	font-weight:bold;
+	border:2px solid green;
+	background:transparent;
+	margin-top:10px;
+	margin-bottom:30px;
+	margin-left:30px;
+}
+#toppings3:hover{
+	background:green;
+}
+#topping4{
+	width:50%;
+	height:50%;
+	margin-left:50px;	
+}
+#toppings4{
+	width:150px;
+	padding:15px;
+	text-align:center;
+	border-radius:25px;
+	font-weight:bold;
+	border:2px solid green;
+	background:transparent;
+	margin-top:10px;
+	margin-bottom:30px;
+	margin-left:30px;
+}
+#toppings4:hover{
+	background:green;
+}
+#topping5{
+	width:50%;
+	height:50%;
+	margin-left:50px;
+}
+#toppings5{
+	width:150px;
+	padding:15px;
+	text-align:center;
+	border-radius:25px;
+	font-weight:bold;
+	border:2px solid green;
+	background:transparent;
+	margin-top:10px;
+	margin-bottom:30px;
+	margin-left:30px;
+}
+#toppings5:hover{
+	background:green;
+}
+#topping6{
+	width:50%;
+	height:50%;
+	margin-left:50px;	
+}
+#toppings6{
+	width:150px;
+	padding:15px;
+	text-align:center;
+	border-radius:25px;
+	font-weight:bold;
+	border:2px solid green;
+	background:transparent;
+	margin-top:10px;
+	margin-bottom:30px;
+	margin-left:30px;
+}
+#toppings6:hover{
+	background:green;
+}
+#topping7{
+	width:50%;
+	height:50%;
+	margin-left:50px;		
+}
+#toppings7{
+	width:150px;
+	padding:15px;
+	text-align:center;
+	border-radius:25px;
+	font-weight:bold;
+	border:2px solid green;
+	background:transparent;
+	margin-top:10px;
+	margin-bottom:30px;
+	margin-left:30px;
+}
+#toppings7:hover{
+	background:green;
+}
+#topping8{
+	width:50%;
+	height:50%;
+	margin-left:50px;	
+}
+#toppings8{
+	width:150px;
+	padding:15px;
+	text-align:center;
+	border-radius:25px;
+	font-weight:bold;
+	border:2px solid green;
+	background:transparent;
+	margin-top:10px;
+	margin-bottom:30px;
+	margin-left:30px;
+}
+#toppings8:hover{
+	background:green;
+}
+#buttongreen{
+	width:150px;
+	padding:15px;
+	text-align:center;
+	margin-top:20px;
+	border-radius:25px;
+	font-weight:bold;
+	border:2px solid green;
+	background:transparent;
+	margin-top:50px;
+	margin-bottom:30px;
+}
+#line1{
+	margin-top:25%;
+	width:100%;
+	height:1%;
+	background-color:red;
+	border:red;
+}
+#line2{
+	margin-top:0%;
+	width:100%;
+	height:1%;
+	background-color:red;
+	border:red;
+}
+#buttongreen:hover{
+	background:green;
+}

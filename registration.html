@@ -1,0 +1,253 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Registration Form</title>
+		<link rel="stylesheet" href="registration.css">
+		<script>
+			function txtfocus()
+			{
+				document.getElementById("fname").style.background="gray";
+				document.getElementById("fname").style.color="white";
+			}
+			function focuslost()
+			{
+				document.getElementById("fname").style.background="white";
+				document.getElementById("fname").style.color="black";
+			}
+			function txtfocus2()
+			{
+				document.getElementById("lname").style.background="gray";
+				document.getElementById("lname").style.color="white";
+			}
+			function focuslost2()
+			{
+				document.getElementById("lname").style.background="white";
+				document.getElementById("lname").style.color="black";
+			}
+			function txtfocus3()
+			{
+				document.getElementById("birthday").style.background="gray";
+				document.getElementById("birthday").style.color="white";
+			}
+			function focuslost3()
+			{
+				document.getElementById("birthday").style.background="white";
+				document.getElementById("birthday").style.color="black";
+			}
+			function txtfocus4()
+			{
+				document.getElementById("email").style.background="gray";
+				document.getElementById("email").style.color="white";
+			}
+			function focuslost4()
+			{
+				document.getElementById("email").style.background="white";
+				document.getElementById("email").style.color="black";
+			}
+			function txtfocus5()
+			{
+				document.getElementById("phone").style.background="gray";
+				document.getElementById("phone").style.color="white";
+			}
+			function focuslost5()
+			{
+				document.getElementById("phone").style.background="white";
+				document.getElementById("phone").style.color="black";
+			}
+			function txtfocus6()
+			{
+				document.getElementById("password").style.background="gray";
+				document.getElementById("password").style.color="white";
+			}
+			function focuslost6()
+			{
+				document.getElementById("password").style.background="white";
+				document.getElementById("password").style.color="black";
+			}
+			function txtfocus7()
+			{
+				document.getElementById("cpassword").style.background="gray";
+				document.getElementById("cpassword").style.color="white";
+			}
+			function focuslost7()
+			{
+				document.getElementById("cpassword").style.background="white";
+				document.getElementById("cpassword").style.color="black";
+			}
+			function refresh()
+			{
+				alert("Registration form is refresh");
+			}
+			function clearErrors()
+			{
+				errors=document.getElementsByClassName("error");
+				for(let item of errors)
+				{
+					item.innerHTML="";
+				}
+			}
+			function validateform()
+			{
+				clearErrors();
+				var a1=document.forms["myForm"]["firstname"].value;
+				var a2=document.forms["myForm"]["lastname"].value;
+				var a3=document.forms["myForm"]["birthday"].value;
+				var a4=document.forms["myForm"]["gender"];
+				var a5=document.forms["myForm"]["email"].value;
+				var atposition=a5.indexOf("@");
+				var dotpostision=a5.lastIndexOf(".");
+				var a6=document.forms["myForm"]["phone"].value;
+				var a7=document.forms["myForm"]["password"].value;
+				var a8=document.forms["myForm"]["cpassword"].value;
+				var errormes1=document.getElementById("error1");
+				var errormes2=document.getElementById("error2");
+				var errormes3=document.getElementById("error3");
+				var errormes4=document.getElementById("error4");
+				var errormes5=document.getElementById("error5");
+				var errormes6=document.getElementById("error6");
+				var errormes7=document.getElementById("error7");
+				var errormes8=document.getElementById("error8");
+				if(a1=="")
+				{
+					errormes1.textContent="Please Enter First Name";
+					errormes1.style.color="red";
+					return false;
+				}
+				if(((a1.length)<5) || ((a1.length)>20))
+				{
+					errormes1.textContent="First name must be between 5 to 20";
+					errormes1.style.color="red";
+					return false;
+				}
+				if(a2=="")
+				{
+					errormes2.textContent="Please Enter Last Name";
+					errormes2.style.color="red";
+					return false;
+				}
+				if(((a2.length)<5) || ((a2.length)>20))
+				{
+					errormes2.textContent="Last name must be between 5 to 20";
+					errormes2.style.color="red";
+					return false;
+				}
+				if(a3=="")
+				{
+					errormes3.textContent="Please enter birthday";
+					errormes3.style.color="red";
+					return false;
+				}
+				if(a4[0].checked==false && a4[1].checked==false)
+				{
+					errormes4.textContent="Please select one option";
+					errormes4.style.color="red";
+					return false;
+				}
+				if(a5=="")
+				{
+					errormes5.textContent="Please enter email";
+					errormes5.style.color="red";
+					return false;
+				}
+				if(atposition<1 || dotpostision<atposition+2 || dotpostision+2>=a5.length)
+				{
+					errormes5.textContent="Please enter valid Email address atposition : " + atposition + " dotposition : " + dotpostision;
+					errormes5.style.color="red";
+					return false;
+				}
+				if(a5.length>20)
+				{
+					errormes5.textContent="Email length is so long";
+					errormes5.style.color="red";
+					return false;
+				}
+				if(a6=="")
+				{
+					errormes6.textContent="Please Enter Phone number";
+					errormes6.style.color="red";
+					return false;
+				}
+				if(a6.length!=10)
+				{
+					errormes6.textContent="Phone Number must be in 10 digits";
+					errormes6.style.color="red";
+					return false;
+				}
+				if(a7=="")
+				{
+					errormes7.textContent="Please Enter Password";
+					errormes7.style.color="red";
+					return false;
+				}
+				if(a7.length<8)
+				{
+					errormes7.textContent="Password should be atleast 8 character long";
+					errormes7.style.color="red";
+					return false;
+				}
+				if(a8=="")
+				{
+					errormes8.textContent="Please enter confirm password";
+					errormes8.style.color="red";
+					return false;
+				}
+				if(a8!=a7)
+				{
+					errormes8.textContent="Confirm password and password must be same";
+					errormes8.style.color="red";
+					return false;
+				}
+				else
+				{
+					window.location="index.html";	
+				}
+			}
+		</script>
+	</head>
+	<body onload="refresh()">
+		<div class="container">
+			<center> <h1>REGISTER FORM</h1></center>
+			<form name="myForm">
+				<label for="fname">First Name:</label>
+				<input type="text" id="fname" Name="firstname" placeholder="Your First Name" onfocus="txtfocus()" onblur="focuslost()">
+				<p id="error1" class="error"></p>
+				
+				<label for="lname">Last Name:</label>
+				<input type="text" id="lname" name="lastname" placeholder="Your Last Name" onfocus="txtfocus2()" onblur="focuslost2()">
+				<p id="error2" class="error"></p>
+			 
+				<label for="birthday">Birthday:</label>
+				<input type="date" id="birthday" name="birthday" onfocus="txtfocus3()" onblur="focuslost3()">
+				<p id="error3" class="error"></p>
+
+				<label  align="middle" >Gender :
+					<br>
+					Male <input type="radio" name="gender" value="male">
+					Female <input type="radio" name="gender" value="female">
+					Other <input type="radio" name="gender" value="other">
+				</label>
+				<p id="error4" class="error"></p>
+				
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" placeholder="Your Email" onfocus="txtfocus4()" onblur="focuslost4()">
+				<p id="error5" class="error"></p>
+				
+				<label for="phone">Phone Number:</label>
+				<input type="number" id="phone" name="phone" placeholder="Your Phone Number" onfocus="txtfocus5()" onblur="focuslost5()">
+				<p id="error6" class="error"></p>
+				
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password" placeholder="Your password" onfocus="txtfocus6()" onblur="focuslost6()">
+				<p id="error7" class="error"></p>
+				
+				<label for="cpassword">Confirm Password:</label>
+				<input type="password" id="cpassword" name="cpassword" placeholder="Your confirm password" onfocus="txtfocus7()" onblur="focuslost7()">
+				<p id="error8" class="error"></p>
+				<br>
+				
+				<input type="button" onclick="validateform()" value="Submit"/>
+			</form>
+		</div>
+	</body>
+</html>

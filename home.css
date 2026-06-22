@@ -1,0 +1,53 @@
+#myVideo{
+	position:fixed;
+	right:0;
+	bottom:0;
+	min-width:100%;
+	min-height:100%;
+}
+#main{
+	position:fixed;
+	background:transparent;
+	color:white;
+	width:100%;
+	font-family:"Times New Roman",times,serif;
+}
+#logo{
+	width:10%;
+	height:10%;
+	float:left;
+}
+.navigation{
+	overflow:hidden;
+	background-color:red;
+	height:51px;
+}
+.navigation a{
+	float:left;
+	color:white;
+	text-align:center;
+	padding:15px 40px;
+	text-decoration:none;
+	font-size:17px;
+	height:51px;
+}
+.navigation a:hover{
+	background-color:lightgreen;
+	color:white;
+	text-decoration:underline;
+}
+.navigation a.active{
+	background-color:lightgreen;
+	color:white;
+}
+#chart_img{
+	width:30%;
+}
+#pep{
+	font-size:900%;
+	margin-bottom:0;
+}
+#rizza{
+	font-size:250%;
+	margin-top:0;
+}

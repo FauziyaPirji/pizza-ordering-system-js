@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="index.css">
+	<script>
+		function txtfocus()
+		{
+			document.getElementById("username").style.background="gray";
+			document.getElementById("username").style.color="white";
+		}
+		function focuslost()
+		{
+			document.getElementById("username").style.background="white";
+			document.getElementById("username").style.color="black";
+		}
+		function txtfocus2()
+		{
+			document.getElementById("password").style.background="gray";
+			document.getElementById("password").style.color="white";
+		}
+		function focuslost2()
+		{
+			document.getElementById("password").style.background="white";
+			document.getElementById("password").style.color="black";
+		}
+		function validation()
+		{
+			var user=document.getElementById("username").value;
+			var pass=document.getElementById("password").value;
+			if(user=="realpeprizza" && pass=="12345678")
+			{
+				alert("Login successfully");
+				window.location="home.html";
+				return false;
+			}
+			else
+			{	
+				alert("Login Fail");
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+        <center><h2>Sign In</h2></center>
+        <form>
+            <label>Username:</label>
+            <input type="text" id="username" name="username" placeholder="Your Username" onfocus="txtfocus()" onblur="focuslost()"/>
+            <label>Password:</label>
+            <input type="password" id="password" name="password" placeholder="Your Password" onfocus="txtfocus2()" onblur="focuslost2()"/>
+            <input type="button" onclick="validation()" value="login" />
+        </form>
+		<a href="registration.html" style="margin-left:40%">Create account</a>
+	</div>
+</body>
+</html>

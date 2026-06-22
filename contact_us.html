@@ -1,0 +1,147 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Contact Us</title>
+		<link rel="stylesheet" href="contact_us.css">
+		<script>
+			function txtfocus()
+			{
+				document.getElementById("fname").style.background="gray";
+				document.getElementById("fname").style.color="white";
+			}
+			function focuslost()
+			{
+				document.getElementById("fname").style.background="white";
+				document.getElementById("fname").style.color="black";
+			}
+			function txtfocus2()
+			{
+				document.getElementById("email").style.background="gray";
+				document.getElementById("email").style.color="white";
+			}
+			function focuslost2()
+			{
+				document.getElementById("email").style.background="white";
+				document.getElementById("email").style.color="black";
+			}
+			function txtfocus3()
+			{
+				document.getElementById("message").style.background="gray";
+				document.getElementById("message").style.color="white";
+			}
+			function focuslost3()
+			{
+				document.getElementById("message").style.background="white";
+				document.getElementById("message").style.color="black";
+			}
+			function clearErrors()
+			{
+				errors=document.getElementsByClassName("error");
+				for(let item of errors)
+				{
+					item.innerHTML="";
+				}
+			}
+			function validateform()
+			{
+				clearErrors();
+				var a1=document.forms["myForm"]["fname"].value;
+				var a2=document.forms["myForm"]["email"].value;
+				var a3=document.forms["myForm"]["message"].value;
+				var atposition=a2.indexOf("@");
+				var dotpostision=a2.lastIndexOf(".");
+				var errormes1=document.getElementById("error1");
+				var errormes2=document.getElementById("error2");
+				var errormes3=document.getElementById("error3");
+				if(a1=="")
+				{
+					errormes1.textContent="Please Enter Full Name";
+					errormes1.style.color="red";
+					return false;
+				}
+				if(((a1.length)<10) || ((a1.length)>20))
+				{
+					errormes1.textContent="Full name must be between 10 to 20";
+					errormes1.style.color="red";
+					return false;
+				}
+				if(a2=="")
+				{
+					errormes2.textContent="Please enter email";
+					errormes2.style.color="red";
+					return false;
+				}
+				if(atposition<1 || dotpostision<atposition+2 || dotpostision+2>=a2.length)
+				{
+					errormes2.textContent="Please enter valid Email address atposition : " + atposition + " dotposition : " + dotpostision;
+					errormes2.style.color="red";
+					return false;
+				}
+				if(a2.length>20)
+				{
+					errormes2.textContent="Email length is so long";
+					errormes2.style.color="red";
+					return false;
+				}
+				if(a3=="")
+				{
+					errormes3.textContent="Enter message";
+					errormes3.style.color="red";
+					return false;
+				}
+				else
+				{
+					errormes3.textContent="";	
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="main">
+		<div>
+			<img src="logo.png" id="logo">
+		</div>
+		<div class="navigation">
+			<a href="home.html">Home</a>
+			<a href="menu.html">Menu</a>
+			<a href="about_us.html">About us</a>
+			<a href="our services.html">Services</a>
+			<a class="active" href="contact_us.html">Contact Us</a>
+			<a href="index.html">Log Out</a>
+			<a style="width:10%;height:100%;margin-left:1%" href="chart.html"><img src="chart_img.png" id="chart_img"></a>
+		</div>
+		</div>
+		<div class="container">
+		<section class="contact-info">
+			<h1>Contact Us</h1>
+			<p>Get in touch with us using the form below or you can visit our office at the following address:</p>
+			<address>
+			   <img src="imgg4.png">
+				<br>2518 Ground floor, Hudson Lane, GTB Nagar, Delhi, 110009, India <br>
+				<a href="tel:+912238767866"> +91 22 3876 7866</a><br>
+				<a href="mailto:websupport@justdial.com">websupport@justdial.com</a>
+			</address>
+			<div class="contact-hours">
+				<h3>Our Timing</h3>
+				Mon-Sun: 10:00 AM 07:00 PM
+			</div>
+		</section>
+		<section class="contact-form">
+			<h2>Send Us a Message</h2>
+			<form name="myForm">
+				<label for="fname">Full Name:</label>
+				<input type="text" id="fname" name="fname" placeholder="Your Full Name" onfocus="txtfocus()" onblur="focuslost()">
+				<p id="error1" class="error"></p>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" placeholder="Your Email" onfocus="txtfocus2()" onblur="focuslost2()">
+				<p id="error2" class="error"></p>
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" placeholder="Write your message here" onfocus="txtfocus3()" onblur="focuslost3()"></textarea>
+				<p id="error3" class="error"></p>
+				<input type="submit" onclick="return validateform()" value="Submit" id="button"></button>
+			</form>
+		</section>
+		</div>
+	</body>
+</html>

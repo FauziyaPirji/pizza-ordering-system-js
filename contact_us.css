@@ -1,0 +1,135 @@
+	
+	*{
+		padding:0;
+		margin:0;
+		box-sizing: border-box;
+		font-family:"poppins",sans-serif;
+	 }
+	#logo{
+		width:10%;
+		height:90%;
+		float:left;
+	}
+	.navigation{
+		overflow:hidden;
+		background-color:red;
+		height:51px;
+	}
+	.navigation a{
+		float:left;
+		color:white;
+		text-align:center;
+		padding:15px 40px;
+		text-decoration:none;
+		font-size:17px;
+		height:51px;
+	}
+	.navigation a:hover{
+		background-color:lightgreen;
+		color:white;
+		text-decoration:underline;
+	}
+	.navigation a.active{
+		background-color:lightgreen;
+		color:white;
+	}
+	#chart_img{
+		width:60%;
+	}
+	 body {
+		font-family: Arial, sans-serif;
+		min-height:100vh;
+		background:url(imgg5.jpg)center/cover;
+		display:flex;
+		flex-direction:column;
+		backdrop-filter:blur(1px);
+		 
+	 }
+	.container {
+	  padding: 20px;
+	  max-width: 900px;
+	  margin: 0 auto;
+	  display: flex;
+	}
+
+	.contact-info {
+		
+	  flex: 1;
+	  padding: 20px;
+	  border-radius: 4px;
+	  font-size:20px;
+	  background-color:lightgrey;
+	}
+
+	.contact-form {
+	  flex: 1;
+	  padding: 20px;
+	  border-radius: 4px;
+	  
+	}
+
+	h1, h2 {
+	  text-align: center;
+	  margin-bottom: 20px;
+	  font-size:30px;
+	}
+
+	p {
+	  line-height: 1.5;
+	}
+
+	address {
+	  margin-bottom: 20px;
+	  font-style: italic;
+	}
+
+	.contact-hours {
+	  margin-top: 20px;
+	}
+
+	label {
+	  padding: 12px 12px 0 0;
+	  display: inline-block;
+	}
+
+	input[type=text], input[type=email], textarea {
+	  width: 100%;
+	  padding: 12px;
+	  border: 1px solid #ccc;
+	  border-radius: 4px;
+	  box-sizing: border-box;
+	  margin-top: 6px;
+	  margin-bottom: 16px;
+	  resize: vertical;
+	}
+
+	#button {
+	  background-color: #04AA6D;
+	  color: white;
+	  padding: 12px 20px;
+	  border: none;
+	  border-radius: 4px;
+	  cursor: pointer;
+	  width: 100%;
+	}
+
+	address{
+		image:url(imgg3.png);
+	}
+	imgg4{
+		width:20px;
+		height:20px;
+	}
+	button:hover {
+	  opacity: 0.8;
+	}
+	label{
+		font-size:20px;
+		
+	}
+
+	@media screen and (max-width: 768px) {
+	  .container {
+		flex-direction: column;
+	  }
+	}
